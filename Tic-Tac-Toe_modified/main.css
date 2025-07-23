@@ -1,0 +1,39 @@
+.home-container {
+    height: 100vh;
+    background-color: #548687;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 4rem;
+    color: #ffffc7;
+    text-shadow: 2px 2px 4px #333;
+}
+
+.mode-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mode-buttons button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #191913;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.mode-buttons button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}

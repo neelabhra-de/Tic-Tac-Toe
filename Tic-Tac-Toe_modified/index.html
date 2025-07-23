@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe - Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="home-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="mode-buttons">
+            <button onclick="location.href='pvp.html'">🎮 Player vs Player</button>
+            <button onclick="location.href='pvc.html'">🤖 Player vs Computer</button>
+        </div>
+    </div>
+
+
+
+
+    
+      <iframe
+    id="bg-music"
+    width="0"
+    height="0"
+    src="https://www.youtube.com/embed/jfKfPfyJRdk?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=jfKfPfyJRdk"
+    frameborder="0"
+    allow="autoplay"
+  ></iframe>
+
+  <!-- YouTube API script -->
+  <script>
+    document.addEventListener("click", function () {
+      const iframe = document.getElementById("bg-music");
+      const player = new YT.Player(iframe, {
+        events: {
+          onReady: function (event) {
+            event.target.unMute();
+          }
+        }
+      });
+    });
+
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+  </script>
+</body>
+
+</html>
